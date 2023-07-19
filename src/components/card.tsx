@@ -30,7 +30,7 @@ export const Card: React.FC<IProperty> = ({
   },
 }) => {
   return (
-    <article className="card max-w-sm mx-auto bg-lightyellow rounded-xl shadow-md overflow-hidden md:max-w-2xl m-4 border border-black-300 hover:rotate-45">
+    <article className="card max-w-xs mx-auto bg-lightyellow rounded-xl shadow-md overflow-hidden md:max-w-2xl m-4 border border-black-300 hover:rotate-45">
       <div className="md:flex">
         <div className="md:flex-shrink-0">
           <img
@@ -39,7 +39,7 @@ export const Card: React.FC<IProperty> = ({
             alt={title}
           />
         </div>
-        <div className="p-8">
+        <div className="p-4 md:p-8">
           <h4 className="card-title block mt-1 text-lg leading-tight font-bold text-red-500 hover:text-purple-500">
             {title}
           </h4>
