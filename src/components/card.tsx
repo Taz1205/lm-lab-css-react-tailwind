@@ -1,4 +1,6 @@
 import React from "react";
+import { Heading } from "./heading";
+import { Image } from "./image";
 
 export interface IProperty {
   property: {
@@ -28,7 +30,7 @@ export const Card: React.FC<IProperty> = ({
   },
 }) => {
   return (
-    <article className="card max-w-sm mx-auto bg-lightyellow rounded-xl shadow-md overflow-hidden md:max-w-2xl m-4 border border-black-300">
+    <article className="card max-w-sm mx-auto bg-lightyellow rounded-xl shadow-md overflow-hidden md:max-w-2xl m-4 border border-black-300 hover:rotate-45">
       <div className="md:flex">
         <div className="md:flex-shrink-0">
           <img
